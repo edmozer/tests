@@ -10,7 +10,7 @@ public class GaiaRobo {
         WebDriverManager.chromedriver().setup();
         ChromeDriver edDriver = new ChromeDriver();
 
-        edDriver.get("http://www.juliodelima.com.br/taskit");
+        edDriver.get("https://www.google.com");
     }
     public void fazerLogin(){
         System.out.println("Vou fazer login!");
