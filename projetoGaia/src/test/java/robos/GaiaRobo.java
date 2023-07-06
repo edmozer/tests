@@ -6,11 +6,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.sql.SQLOutput;
 
 public class GaiaRobo {
-    public void abrirChrome(){
-        WebDriverManager.chromedriver().setup();
-        ChromeDriver edDriver = new ChromeDriver();
 
-        edDriver.get("https://www.google.com");
+    public ChromeDriver edDriver;
+
+    public GaiaRobo() {
+        WebDriverManager.chromedriver().setup();
+        edDriver = new ChromeDriver();
+    }
+
+    public void acessarUmSite(){
+
+        edDriver.get("https://globoesporte.globo.com");
     }
     public void fazerLogin(){
         System.out.println("Vou fazer login!");
